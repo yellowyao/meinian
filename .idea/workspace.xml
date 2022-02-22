@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8db88227-8bbc-418f-8841-c129d2cc5ff9" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\java\apache-maven-3.8.4\repository_1" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../java/apache-maven-3.8.4" />
+        <option name="showDialogWithAdvancedSettings" value="true" />
+        <option name="useMavenConfig" value="true" />
+        <option name="usePluginRegistry" value="true" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="24rLf972I6G83tEnJLzhpJylmKi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql&#10;redshift" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/meinian_common/src/main/java/com/atguigu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/meinian_web/src/main/webapp" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.protractor.protractor_package" value="" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.31839082" />
+    <property name="settings.editor.selected.configurable" value="preferences.mongoOptions" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\1_JAVAPROJECT\meinian_parent\meinian_web\src\main\webapp" />
+      <recent name="D:\1_JAVAPROJECT\meinian_parent\meinian_dao\src\main\resources\com\atguigu\dao" />
+      <recent name="D:\1_JAVAPROJECT\meinian_parent\meinian_common\src\main\java\com\atguigu\util" />
+      <recent name="D:\1_JAVAPROJECT\meinian_parent\meinian_mobile_web\src\main\webapp" />
+      <recent name="D:\1_JAVAPROJECT\meinian_parent\meinian_common\src\main\java\com\atguigu\constant" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.meinian_web [tomcat7:run]">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="meinian_common" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="ttes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ttes" />
+      <module name="meinian_web" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="未命名" type="CompoundRunConfigurationType">
+      <toRun name="meinian_service [tomcat7:run]" type="MavenRunConfiguration" />
+      <toRun name="meinian_web [tomcat7:run]" type="MavenRunConfiguration" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ll.aVoid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="meinian_service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ll" />
+      <option name="METHOD_NAME" value="aVoid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="test.s" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="meinian_common" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="s" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="meinian_jobs [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" singleton="false">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/meinian_jobs" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="meinian_mobile_web [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/meinian_mobile_web" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="meinian_parent" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="meinian_service [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/meinian_service" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="meinian_web [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/meinian_web" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ll.aVoid" />
+      <item itemvalue="JUnit.test.s" />
+      <item itemvalue="Maven.meinian_parent" />
+      <item itemvalue="Maven.meinian_jobs [tomcat7:run]" />
+      <item itemvalue="Maven.meinian_service [tomcat7:run]" />
+      <item itemvalue="Maven.meinian_web [tomcat7:run]" />
+      <item itemvalue="Maven.meinian_mobile_web [tomcat7:run]" />
+      <item itemvalue="复合.未命名" />
+      <item itemvalue="应用程序.test" />
+      <item itemvalue="应用程序.ttes" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.ttes" />
+        <item itemvalue="Maven.meinian_mobile_web [tomcat7:run]" />
+        <item itemvalue="JUnit.ll.aVoid" />
+        <item itemvalue="JUnit.test.s" />
+        <item itemvalue="应用程序.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="8db88227-8bbc-418f-8841-c129d2cc5ff9" name="更改" comment="" />
+      <created>1644383860273</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644383860273</updated>
+      <workItem from="1644383862608" duration="1489000" />
+      <workItem from="1644392163644" duration="2562000" />
+      <workItem from="1644395782568" duration="1177000" />
+      <workItem from="1644396985051" duration="9256000" />
+      <workItem from="1644409448658" duration="7864000" />
+      <workItem from="1644421984276" duration="89000" />
+      <workItem from="1644422089191" duration="5655000" />
+      <workItem from="1644468600119" duration="16000" />
+      <workItem from="1644469002399" duration="560000" />
+      <workItem from="1644469597564" duration="3795000" />
+      <workItem from="1644477526497" duration="19088000" />
+      <workItem from="1644553747478" duration="41000" />
+      <workItem from="1644553803872" duration="2183000" />
+      <workItem from="1644557351546" duration="8697000" />
+      <workItem from="1644570409419" duration="10549000" />
+      <workItem from="1644591615040" duration="608000" />
+      <workItem from="1644658010169" duration="12640000" />
+      <workItem from="1644727147742" duration="3384000" />
+      <workItem from="1644811323133" duration="18614000" />
+      <workItem from="1644899407713" duration="829000" />
+      <workItem from="1644912458863" duration="6106000" />
+      <workItem from="1644983108398" duration="2215000" />
+      <workItem from="1645072196891" duration="594000" />
+      <workItem from="1645165463229" duration="8309000" />
+      <workItem from="1645420370265" duration="74000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/meinian_mobile_web/src/main/java/com/atguigu/controller/LoginController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.sun.proxy.$Proxy42" memberName="h" />
+        <PinnedItemInfo parentTag="redis.clients.jedis.exceptions.JedisDataException" memberName="detailMessage" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

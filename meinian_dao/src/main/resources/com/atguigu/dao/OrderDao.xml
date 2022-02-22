@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.dao.OrderDao">
+    <insert id="addOrder" parameterType="Order" keyProperty="id" useGeneratedKeys="true">
+        insert into t_order (member_id, orderDate, orderType, orderStatus, setmeal_id)
+        values (#{memberId}, #{orderDate}, #{orderType}, #{orderStatus}, #{setmealId})
+
+    </insert>
+
+    <resultMap id="findOrderByCondition" type="Order">
+        <id column="id" property="id"/>
+        <result column="member_id" property="memberId"/>
+        <result column="orderDate" property="orderDate"/>
+        <result column="orderType" property="orderType"/>
+        <result column="orderStatus" property="orderStatus"/>
+        <result column="setmeal_id" property="setmealId"/>
+    </resultMap>
+
+    <select id="findOrderByCondition" resultMap="findOrderByCondition" parameterType="Order">
+        select *
+        from t_order
+        <where>
+            <if test="id!=null">
+                id=#{id} and
+            </if>
+            <if test="memberId!=null">
+                member_id=#{memberId} and
+            </if>
+            <if test="orderDate!=null">
+                orderDate=#{orderDate} and
+            </if>
+            <if test="orderType!=null">
+                orderType=#{orderType} and
+            </if>
+            <if test="orderStatus!=null">
+                orderStatus=#{orderStatus} and
+            </if>
+            <if test="setmealId!=null">
+                setmeal_id=#{setmealId} and
+            </if>
+
+            '1'='1'
+
+        </where>
+    </select>
+</mapper>

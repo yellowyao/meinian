@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.dao.SetmealDao">
+    <insert id="add" parameterType="Setmeal" keyProperty="id" useGeneratedKeys="true">
+        insert into t_setmeal (name, code, helpCode, sex, age, price, remark, attention, img)
+        values (#{name}, #{code}, #{helpCode}, #{sex}, #{age}, #{price}, #{remark}, #{attention}, #{img});
+    </insert>
+    <update id="edit" parameterType="Setmeal">
+        update t_setmeal
+        <set>
+            <if test="name!=nul and name.length>0">name=#{name},</if>
+            <if test="code!=nul and code.length>0">code=#{code},</if>
+            <if test="helpCode!=nul and helpCode.length>0">helpCode=#{helpCode},</if>
+            <if test="sex!=nul and sex.length>0">sex=#{sex},</if>
+            <if test="age!=nul and age.length>0">age=#{age},</if>
+            <if test="price!=nul and price.length>0">price=#{price},</if>
+            <if test="remark!=nul and remark.length>0">remark=#{remark},</if>
+            <if test="attention!=nul and attention.length>0">attention=#{attention},</if>
+            <if test="img!=nul and img.length>0">img=#{img}</if>
+
+        </set>
+        where id=#{id}
+    </update>
+    <insert id="setTravelGroupIdBySetmealId" parameterType="map" >
+        insert into t_setmeal_travelgroup (setmeal_id,travelgroup_id)
+        values (#{setmealid},#{travelgroupid});
+    </insert>
+    <delete id="deleteById" parameterType="int">
+        delete
+        from t_setmeal
+        where id=#{id};
+    </delete>
+    <delete id="deleteTravelGroupIdBySetmealId" parameterType="integer">
+        delete
+        from t_setmeal_travelgroup
+        where setmeal_id=#{id};
+    </delete>
+    <select id="findPage" parameterType="String" resultType="Setmeal">
+        select *from t_setmeal
+        <where>
+            <if test="value!=null and value.length>0">
+                code=#{value} or name like concat('%',#{value},'%')
+            </if>
+        </where>
+    </select>
+
+    <select id="findAll" resultType="com.atguigu.pojo.Setmeal">
+        select *
+        from t_setmeal;
+    </select>
+    <select id="findTravelGroupIdBySetmealId" resultType="java.lang.Integer">
+        select *
+        from t_setmeal_travelgroup where setmeal_id=#{id};
+    </select>
+    
+    <resultMap id="findByIdResultMap" type="Setmeal">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="code" property="code"/>
+        <result column="helpCode" property="helpCode"/>
+        <result column="sex" property="sex"/>
+        <result column="age" property="age"/>
+        <result column="price" property="price"/>
+        <result column="remark" property="remark"/>
+        <result column="attention" property="attention"/>
+        <result column="img" property="img"/>
+        <collection property="travelGroups" column="id" select="com.atguigu.dao.TravelGroupDao.findTravelGroupListBySetmealId"/>
+    </resultMap>
+
+    <select id="findById" resultMap="findByIdResultMap" parameterType="integer">
+        select *
+        from t_setmeal where id=#{id};
+    </select>
+
+
+</mapper>

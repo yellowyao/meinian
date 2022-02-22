@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.dao.OrderSettingDao">
+    <insert id="add" parameterType="OrderSetting">
+        insert into t_ordersetting(orderDate, number, reservations) value (#{orderDate},#{number},#{reservations})
+    </insert>
+
+
+    <update id="edit" parameterType="OrderSetting">
+        update t_ordersetting
+        set number=#{number}, reservations=#{reservations}
+        where orderDate = #{orderDate,jdbcType=DATE}
+    </update>
+
+
+
+
+    <select id="findCountByOrderDate" parameterType="java.util.Date" resultType="long">
+        select count(*)
+        from t_ordersetting
+        where orderDate = #{orderDate,jdbcType=DATE}
+    </select>
+
+
+    <select id="findBetweenDate" resultType="com.atguigu.pojo.OrderSetting" parameterType="hashmap">
+        select *
+        from t_ordersetting
+        where orderDate between #{startDate} and #{endDate}
+    </select>
+    <select id="findOrderByOrderDate" resultType="com.atguigu.pojo.OrderSetting" parameterType="string">
+        select *
+        from t_ordersetting
+        where orderDate=#{orderDate}
+    </select>
+
+    <!--    concat("'",#{startDate},"'") and  concat("'",#{endDate},"'")-->
+</mapper>

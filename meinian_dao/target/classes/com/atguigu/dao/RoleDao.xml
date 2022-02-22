@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.dao.RoleDao">
+
+    <resultMap id="findRolesByUserId" type="Role">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="keyword" property="keyword"/>
+        <result column="description" property="description"/>
+        <collection property="permissions" column="id" select="com.atguigu.dao.PermissionDao.findPermissionsByRoleId"/>
+    </resultMap>
+
+    <select id="findRolesByUserId" resultMap="findRolesByUserId" parameterType="integer">
+        select t_role.*
+        from t_role left join t_user_role on t_user_role.role_id=t_role.id where t_user_role.user_id=#{userId}
+    </select>
+</mapper>
